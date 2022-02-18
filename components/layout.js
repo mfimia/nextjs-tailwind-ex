@@ -1,15 +1,14 @@
-import styles from "./layout.module.css";
 import Head from "next/head";
-import utilStyles from "../styles/utils.module.css";
-import Link from "next/link";
 import Image from "next/image";
+import Link from "next/link";
 import { Fragment } from "react";
+import utilStyles from "../styles/utils.module.css";
+import styles from "./layout.module.css";
 
 const name = "M F";
 export const siteTitle = "Next.js Sample Website";
 
 const Layout = ({ children, home }) => {
-  // import style form css module
   return (
     <div className={styles.container}>
       <Head>
