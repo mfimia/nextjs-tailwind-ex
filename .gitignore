@@ -21,6 +21,7 @@ alt-with-db.js
 alt-with-fetch.js
 getServerSideProps.js
 useSWR.js
+fetch-api-example.js
 
 # debug
 npm-debug.log*
