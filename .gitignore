@@ -17,6 +17,10 @@
 
 # misc
 .DS_Store
+alt-with-db.js
+alt-with-fetch.js
+getServerSideProps.js
+useSWR.js
 
 # debug
 npm-debug.log*
