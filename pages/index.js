@@ -11,7 +11,7 @@ const Home = () => {
       <section className={utilStyles.headingMd}>
         <p>Just your average code enjoyer</p>
         <p>
-          <a href="https://nextjs.org/learn"> Next.js docs</a>
+          <a href="https://nextjs.org/learn">Next.js docs</a>
         </p>
       </section>
     </Layout>
