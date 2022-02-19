@@ -22,6 +22,8 @@ alt-with-fetch.js
 getServerSideProps.tsx
 useSWR.js
 fetch-api-example.js
+postcss.config.js
+tailwind.config.js
 
 # debug
 npm-debug.log*
