@@ -1,5 +1,5 @@
 import { AppProps } from "next/app";
-import "../styles/global.css";
+import "../styles/globals.css";
 
 // add css that is loaded by every page
 const App = ({ Component, pageProps }: AppProps) => {
