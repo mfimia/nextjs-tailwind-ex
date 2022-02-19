@@ -1,14 +1,20 @@
 import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
-import { Fragment } from "react";
+import { Fragment, ReactNode } from "react";
 import utilStyles from "../styles/utils.module.css";
 import styles from "./layout.module.css";
 
 const name = "M F";
 export const siteTitle = "Next.js Sample Website";
 
-const Layout = ({ children, home }) => {
+const Layout = ({
+  children,
+  home,
+}: {
+  children: ReactNode;
+  home?: boolean;
+}) => {
   return (
     <div className={styles.container}>
       <Head>

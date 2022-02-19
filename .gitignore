@@ -19,7 +19,7 @@
 .DS_Store
 alt-with-db.js
 alt-with-fetch.js
-getServerSideProps.js
+getServerSideProps.tsx
 useSWR.js
 fetch-api-example.js
 

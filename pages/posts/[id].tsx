@@ -1,13 +1,14 @@
-import Layout from "../../components/layout";
-import { getAllPostIds, getPostData } from "../../lib/posts";
+import { GetStaticPaths, GetStaticProps } from "next";
 import Head from "next/head";
 import Date from "../../components/date";
+import Layout from "../../components/layout";
+import { getAllPostIds, getPostData } from "../../lib/posts";
 import utilStyles from "../../styles/utils.module.css";
 
 // nextjs method. returns props that components can consume. takes in params from name of this file "[]"
 // runs at build time
-export const getStaticProps = async ({ params }) => {
-  const postData = await getPostData(params.id);
+export const getStaticProps: GetStaticProps = async ({ params }) => {
+  const postData = await getPostData(params.id as string);
   return {
     props: {
       postData,
@@ -17,7 +18,7 @@ export const getStaticProps = async ({ params }) => {
 
 // nextjs method. returns object that generates dynamic paths
 // runs at build time
-export const getStaticPaths = async () => {
+export const getStaticPaths: GetStaticPaths = async () => {
   const paths = getAllPostIds();
   return {
     paths,
@@ -28,7 +29,11 @@ export const getStaticPaths = async () => {
 };
 
 // component. consumes post data and has generated dynamic route
-const Post = ({ postData }) => {
+const Post = ({
+  postData,
+}: {
+  postData: { title: string; date: string; contentHtml: string };
+}) => {
   return (
     <Layout>
       <Head>
