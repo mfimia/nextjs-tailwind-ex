@@ -17,13 +17,13 @@
 
 # misc
 .DS_Store
-alt-with-db.js
-alt-with-fetch.js
+alt-with-db.tsx
+alt-with-fetch.tsx
 getServerSideProps.tsx
-useSWR.js
-fetch-api-example.js
-postcss.config.js
-tailwind.config.js
+useSWR.tsx
+fetch-api-example.tsx
+postcss.config.ts
+tailwind.config.ts
 
 # debug
 npm-debug.log*
